@@ -12,7 +12,14 @@ class App extends React.Component {
     super(props)
     this.state = {count:0}
     this.handleClick = this.handleClick.bind(this);
+  }
 
+  componentDidMount(){
+    console.log('rendered');
+  }
+
+  componentDidUpdate(){
+    console.log('rendered');
   }
 
   render() {
